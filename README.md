@@ -22,7 +22,12 @@ I wont tell you this is easy, getting everything installed and working is tough.
  ```
 
  * In a command prompt, DOS/Cygwin/Bash, change directory into the directory you just cloned "AlphabetAgency".
- * Now tell NodeJS Package Manager (NPM) to pull everything down defined in the package.json file. The packages are listed in the stanza titled devDependencies. You have to have Internet access to run this.
+ 
+ ```
+ cd AlphabetAgency
+ ```
+
+ * Now tell NodeJS Package Manager (NPM) to pull everything down defined in the package.json file. The packages are listed in the stanza titled devDependencies. You will need full Internet access for this to run correctly.
 
 ```
 npm install
@@ -44,7 +49,7 @@ Build the Static HTML based on the templates mustache (http://mustache.github.io
 grunt build
 ```
 
-Start the webserver ( and use Live-Reload )
+Start the webserver on http://localhost:9001/ ( and use Live-Reload )
 ```
 grunt connect
 ```
@@ -52,4 +57,9 @@ grunt connect
 Start Watch ( and compile everything if the source code changes )
 ```
 grunt watch
+```
+
+Clean up the dist html and css 
+```
+grunt clean
 ```

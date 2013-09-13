@@ -1,24 +1,28 @@
 @import "compass";
 @import "compass/css3/border-radius";
 
-
-@function black($opacity){
+// scss function to lighten with opacity
+@function darken($opacity){
     @return rgba(0,0,0,$opacity);
 }
 
-@function white($opacity){
+// scss function to darken with opacity
+@function lighten($opacity){
     @return rgba(255,255,255,$opacity);
 }
 
+// scss mixin to make a embossed box
 @mixin box-emboss($opacity, $opacity2){
-    box-shadow:white($opacity) 0 2px 0, inset black($opacity2) 0 2px 0;
+    box-shadow:lighten($opacity) 0 2px 0, inset darken($opacity2) 0 2px 0;
 }
 
+// css mixin to make letter press
 @mixin letterpress($opacity){
-    text-shadow:white($opacity) 0 1px 0;
+    text-shadow:lighten($opacity) 0 1px 0;
 }
 
-$theme-color: #A80000 ;
+// this my theme color
+$theme-color: #4e82b7;
 
 body {
 	background : {
@@ -34,7 +38,7 @@ body {
 				a {
 					color: white;
 					&:hover {
-						color: white(.80);
+						color: lighten(.80);
 					}
 				}
 			}
@@ -45,27 +49,21 @@ body {
 	}
 }
 .carousel-control {
- 	// border-radius: 23px 23px 23px 23px;
-    // color: #FFFFFF;
     font-weight: 100;
-    // padding-top: 50%;
-    // left: 15px;
-    // line-height: 30px;
-    // opacity: 0.5;
-    // position: absolute;
     text-align: center;
-    // top: 40%;
-    // width: 40px;
 }
 .item {
 	h4 {
 		@include letterpress(.80);
 	}
 }
+.jumbotron {
+	@include border-radius(10px);
+}
 .well {
 	@include border-radius(10px);
-	// background-color: white;
-	// border-color: black;
 	@include box-emboss(0.8, 0.05);
-	background-color: white(.30);
+	background-color: lighten(.30);
 }
+
+ 
