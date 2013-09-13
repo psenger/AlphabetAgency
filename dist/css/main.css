@@ -1,0 +1,49 @@
+/* line 23, ../../scss/main.scss */
+body {
+  background-color: #640000;
+}
+/* line 27, ../../scss/main.scss */
+body .navbar {
+  background-color: #6e6e6e;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF6E6E6E', endColorstr='#FF404040');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6e6e6e), color-stop(40%, #5c5c5c), color-stop(62%, #050605), color-stop(100%, #404040));
+  background-image: -webkit-linear-gradient(top, #6e6e6e 0%, #5c5c5c 40%, #050605 62%, #404040 100%);
+  background-image: -moz-linear-gradient(top, #6e6e6e 0%, #5c5c5c 40%, #050605 62%, #404040 100%);
+  background-image: -o-linear-gradient(top, #6e6e6e 0%, #5c5c5c 40%, #050605 62%, #404040 100%);
+  background-image: linear-gradient(top, #6e6e6e 0%, #5c5c5c 40%, #050605 62%, #404040 100%);
+}
+/* line 34, ../../scss/main.scss */
+body .navbar .nav li a {
+  color: white;
+}
+/* line 36, ../../scss/main.scss */
+body .navbar .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* line 42, ../../scss/main.scss */
+body .navbar .navbar-brand {
+  color: white;
+}
+
+/* line 47, ../../scss/main.scss */
+.carousel-control {
+  font-weight: 100;
+  text-align: center;
+}
+
+/* line 61, ../../scss/main.scss */
+.item h4 {
+  text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+}
+
+/* line 65, ../../scss/main.scss */
+.well {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.8) 0 2px 0, inset rgba(0, 0, 0, 0.05) 0 2px 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}

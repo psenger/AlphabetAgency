@@ -1,0 +1,71 @@
+@import "compass";
+@import "compass/css3/border-radius";
+
+
+@function black($opacity){
+    @return rgba(0,0,0,$opacity);
+}
+
+@function white($opacity){
+    @return rgba(255,255,255,$opacity);
+}
+
+@mixin box-emboss($opacity, $opacity2){
+    box-shadow:white($opacity) 0 2px 0, inset black($opacity2) 0 2px 0;
+}
+
+@mixin letterpress($opacity){
+    text-shadow:white($opacity) 0 1px 0;
+}
+
+$theme-color: #A80000 ;
+
+body {
+	background : {
+		color : shade($theme-color, 40%);
+	}
+	.navbar {
+		// needs latest Compass, add '@import "compass"' to your scss
+		background-color: #6e6e6e; // Old browsers
+		@include filter-gradient(#6e6e6e, #404040, vertical); // IE6-9
+		@include background-image(linear-gradient(top, hsl(0,0%,43%) 0%,hsl(0,0%,36%) 40%,hsl(120,11%,2%) 62%,hsl(0,0%,25%) 100%));
+		.nav {
+			li {
+				a {
+					color: white;
+					&:hover {
+						color: white(.80);
+					}
+				}
+			}
+		}
+		.navbar-brand {
+			color: white;
+		}
+	}
+}
+.carousel-control {
+ 	// border-radius: 23px 23px 23px 23px;
+    // color: #FFFFFF;
+    font-weight: 100;
+    // padding-top: 50%;
+    // left: 15px;
+    // line-height: 30px;
+    // opacity: 0.5;
+    // position: absolute;
+    text-align: center;
+    // top: 40%;
+    // width: 40px;
+}
+.item {
+	h4 {
+		@include letterpress(.80);
+	}
+}
+.well {
+	@include border-radius(10px);
+	// background-color: white;
+	// border-color: black;
+	@include box-emboss(0.8, 0.05);
+	background-color: white(.30);
+}

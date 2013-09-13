@@ -1,0 +1,16 @@
+{
+   "menus":[
+      {
+         "name":"Home",
+         "link":"index.html"
+      },
+      {
+         "name":"About",
+         "link":"about.html"
+      },
+      {
+         "name":"Registration",
+         "link":"registration.html"
+      }
+   ]
+}
