@@ -9,6 +9,9 @@ A static website based on Twitter Bootstrap 3.0
 
 I wont tell you this is easy, getting everything installed and working is tough. But here are the steps you need to get it going.
 
+ * Optional Install Ruby or you might have to install RVM
+ * Install (http://sass-lang.com/download.html) SCSS/SASS
+ * Install (http://compass-style.org/install/) Compass 
  * Install (http://nodejs.org/) Node JS
  * Install (http://gruntjs.com/getting-started) Grunt Js
  * Install (http://git-scm.com/downloads) Git
